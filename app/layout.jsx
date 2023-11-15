@@ -6,7 +6,7 @@ export default function RootLayout({ children }) {
                     [header]
                 </header>
                 <main>
-                   {children} 
+                    {children}
                 </main>
                 <footer>
                     [footer]
