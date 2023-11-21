@@ -3,12 +3,9 @@ import Link from 'next/link';
 import Heading from '@/components/Heading';
 import { getReviews } from '@/lib/reviews';
 
-export const revalidate = 30; // seconds
-
 export const metadata = {
   title: 'Reviews',
 };
-
 export default async function ReviewsPage() {
   const reviews = await getReviews(6);
   console.log('[ReviewsPage] rendering:',
