@@ -2,6 +2,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Heading from '@/components/Heading';
 import { getReviews } from '@/lib/reviews';
+
+export const revalidate = 30; // seconds
+
 export const metadata = {
   title: 'Reviews',
 };
